@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .container {
+  background-color: black;
+} */
+
+@mixin local-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting {
+  background-color: rgb(231, 242, 243);
+  @include local-centering();
+  flex-flow: row-reverse wrap;
+}
+.intro {
+  font-size: 5em;
+  flex: 60%;
+  padding-left: 20%;
+}
+
+.img {
+  flex: 40%;
+  @include local-centering();
+}
+
+@media screen and (max-width: 883px) {
+  .greeting {
+    margin: 10px;
+    flex-flow: column wrap;
+    @include local-centering();
+  }
+  .intro {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .img {
+    padding: 0;
+    @include local-centering();
+  }
+}
+
+@mixin flex-box() {
+  display: flex;
+  height: 33vh;
+  font-size: 6vh;
+  align-items: center;
+}
+
+.bio {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#student {
+  @include flex-box;
+  padding: 7% 7% 0 7%;
+  justify-content: flex-end;
+  background-image: linear-gradient(blue, green);
+}
+
+#web {
+  padding: 0 7% 0 7%;
+  @include flex-box;
+}
+#ml {
+  @include flex-box;
+  padding: 0 7% 7% 7%;
+  justify-content: flex-end;
+}
+
+h3 {
+  margin: 0;
+}
+
+.projects {
+  @include local-centering();
+}
