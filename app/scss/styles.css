@@ -1,6 +1,6 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 /* .container {
@@ -19,8 +19,8 @@
           align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-flow: row-reverse wrap;
-          flex-flow: row-reverse wrap;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 .intro {
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 883px) {
   .greeting {
-    margin: 10px;
+    padding: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
@@ -112,7 +112,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7% 7% 0 7%;
+  padding: 0% 7% 0 7%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -139,7 +139,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 7% 7% 7%;
+  padding: 0 7% 0% 7%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

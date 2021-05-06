@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 /* .container {
@@ -15,7 +15,7 @@
 .greeting {
   background-color: rgb(231, 242, 243);
   @include local-centering();
-  flex-flow: row-reverse wrap;
+  flex-flow: row-reverse;
 }
 .intro {
   font-size: 5em;
@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 883px) {
   .greeting {
-    margin: 10px;
+    padding: 30px;
     flex-flow: column wrap;
     @include local-centering();
   }
@@ -61,7 +61,7 @@
 
 #student {
   @include flex-box;
-  padding: 7% 7% 0 7%;
+  padding: 0% 7% 0 7%;
   justify-content: flex-end;
 }
 
@@ -71,7 +71,7 @@
 }
 #ml {
   @include flex-box;
-  padding: 0 7% 7% 7%;
+  padding: 0 7% 0% 7%;
   justify-content: flex-end;
 }
 
