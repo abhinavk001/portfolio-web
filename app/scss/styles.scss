@@ -1,5 +1,6 @@
 * {
   box-sizing: content-box;
+  font-family: sans-serif;
 }
 
 /* .container {
@@ -26,24 +27,6 @@
 .img {
   flex: 40%;
   @include local-centering();
-}
-
-@media screen and (max-width: 883px) {
-  .greeting {
-    padding: 30px;
-    flex-flow: column wrap;
-    @include local-centering();
-  }
-  .intro {
-    padding: 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-  .img {
-    padding: 0;
-    @include local-centering();
-  }
 }
 
 @mixin flex-box() {
@@ -81,4 +64,27 @@ h3 {
 
 .projects {
   @include local-centering();
+  font-size: 15vh;
+}
+
+@media screen and (max-width: 883px) {
+  .greeting {
+    padding: 30px;
+    flex-flow: column;
+    @include local-centering();
+  }
+  .intro {
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  .img {
+    padding: 0;
+    @include local-centering();
+  }
+  .projects {
+    font-size: 7vh;
+    @include local-centering();
+  }
 }
