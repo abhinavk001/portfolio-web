@@ -13,6 +13,11 @@
   align-items: center;
 }
 
+@mixin zero-whitespace {
+  margin: 0;
+  padding: 0;
+}
+
 .greeting {
   background-color: rgb(231, 242, 243);
   @include local-centering();
@@ -64,7 +69,15 @@ h3 {
 
 .projects {
   @include local-centering();
-  font-size: 15vh;
+}
+.proj-title {
+  @include local-centering();
+  flex: 40%;
+  font-size: 12vh;
+  padding: 0 5% 0 5%;
+}
+.proj-content {
+  flex: 60%;
 }
 
 @media screen and (max-width: 883px) {
@@ -87,5 +100,38 @@ h3 {
   .projects {
     font-size: 7vh;
     @include local-centering();
+  }
+  .projects {
+    @include local-centering();
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+  }
+  .proj-title {
+    font-size: 8vh;
+    flex: 30%;
+  }
+  .proj-content {
+    display: flex;
+    flex-flow: column;
+    flex: 70%;
+    justify-content: left;
+    align-items: center;
+    padding: 0 30px 0 30px;
+  }
+  .card {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+  }
+  .card h4 {
+    font-size: 30px;
+    @include zero-whitespace();
+    padding-bottom: 5px;
+  }
+  .card p {
+    font-size: 15px;
+    @include zero-whitespace();
   }
 }
