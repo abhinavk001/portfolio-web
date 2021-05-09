@@ -80,7 +80,7 @@ h3 {
 .proj-title {
   @include local-centering();
   flex: 40%;
-  font-size: 10vh;
+  font-size: 80px;
   padding: 0 5% 0 5%;
 }
 .proj-content {
@@ -97,6 +97,40 @@ h3 {
 
 a:hover {
   background-color: rgb(147, 153, 153);
+}
+
+.contact {
+  @include local-centering();
+  flex-flow: column;
+}
+
+.about-me {
+  flex: 70vh;
+}
+
+.about-me h4 {
+  font-size: 50px;
+}
+
+.logos {
+  height: 50%;
+  @include local-centering();
+}
+
+.logos a {
+  padding: 0 20px 0 20px;
+}
+
+.footer {
+  @include local-centering();
+  flex-flow: column;
+  width: 100%;
+  flex: 30vh;
+  background-color: lightslategray;
+}
+
+.message {
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 883px) {
