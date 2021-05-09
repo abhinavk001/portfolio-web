@@ -106,6 +106,13 @@ h3 {
   margin: 0;
 }
 
+.card {
+  margin: 0 20px 20px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +138,7 @@ h3 {
   -webkit-box-flex: 40%;
       -ms-flex: 40%;
           flex: 40%;
-  font-size: 12vh;
+  font-size: 10vh;
   padding: 0 5% 0 5%;
 }
 
@@ -139,6 +146,18 @@ h3 {
   -webkit-box-flex: 60%;
       -ms-flex: 60%;
           flex: 60%;
+}
+
+.card a {
+  text-decoration: none;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #e4ebeb;
+}
+
+a:hover {
+  background-color: #939999;
 }
 
 @media screen and (max-width: 883px) {
@@ -214,10 +233,10 @@ h3 {
     padding: 0;
   }
   .proj-title {
-    font-size: 8vh;
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    font-size: 7.5vh;
+    -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+            flex: 20%;
   }
   .proj-content {
     display: -webkit-box;
@@ -227,9 +246,9 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    -webkit-box-flex: 70%;
-        -ms-flex: 70%;
-            flex: 70%;
+    -webkit-box-flex: 80%;
+        -ms-flex: 80%;
+            flex: 80%;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -239,13 +258,13 @@ h3 {
     padding: 0 30px 0 30px;
   }
   .card {
-    margin-bottom: 15px;
+    margin: 0 0 10px 0;
     padding: 10px;
     border-style: solid;
     border-width: 2px;
   }
   .card h4 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
     padding-bottom: 5px;
@@ -254,6 +273,9 @@ h3 {
     font-size: 15px;
     margin: 0;
     padding: 0;
+  }
+  .card a {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
